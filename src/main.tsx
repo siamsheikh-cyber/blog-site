@@ -1,45 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import MainLayout from './components/layout/mainLayout.tsx'
-import { createBrowserRouter, RouterProvider, } from 'react-router'
-import Banner from './pages/home/banner.tsx'
-
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: MainLayout,
-  },
-  {
-    path: "/banner",
-    Component: Banner
-  },
-
-])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { RouterProvider, } from 'react-router'
+import { router } from './router/router'
+import { ThemeProvider } from './components/darkmode/theme-provider'
 
 
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>,
 )
