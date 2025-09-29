@@ -4,7 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Link } from "react-router-dom"; // ✅ next/link এর বদলে
+import { Link } from "react-router-dom"; // ✅
 import type { ComponentProps } from "react";
 
 
