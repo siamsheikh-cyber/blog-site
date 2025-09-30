@@ -78,8 +78,12 @@ const Blog03Page = () => {
                     {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
                         <Card
                             key={i}
-                            className="flex flex-col h-full shadow-sm overflow-hidden rounded-lg border"
-                        >
+                            className="flex flex-col h-full shadow-sm overflow-hidden rounded-lg border relative">
+                            {i == 0 || i == 2 || i == 5 ?
+                                <Badge className="absolute top-10 right-10 rotate-45 rounded-none px-10 uppercase translate-x-1/2 -translate-y-1/2">
+                                    Most Popular
+                                </Badge> : ""}
+
                             {/* Image section */}
                             <div className="aspect-video bg-muted rounded-t-lg" />
 

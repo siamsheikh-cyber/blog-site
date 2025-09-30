@@ -11,7 +11,7 @@ const Hero02 = () => {
         <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter bg-gradient-to-r from-[#12C85B] via-[#6C62FF] to-yellow-500 bg-clip-text text-transparent">
           Customized Shadcn UI Blocks & Components
         </h1>
-        <p className="mt-6 md:text-lg text-green-600">
+        <p className="mt-6 md:text-lg">
           Explore a collection of Shadcn UI blocks and components, ready to
           preview and copy. Streamline your development workflow with
           easy-to-implement examples.
