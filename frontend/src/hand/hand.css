@@ -1,0 +1,160 @@
+/* background ball */
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(15px);
+    animation: float 12s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    20% {
+        transform: translate(50px, -40px) scale(1.2);
+    }
+
+    40% {
+        transform: translate(-30px, 60px) scale(1);
+    }
+
+    60% {
+        transform: translate(40px, -50px) scale(1.3);
+    }
+
+    80% {
+        transform: translate(-50px, 30px) scale(1);
+    }
+
+    100% {
+        transform: translate(30px, -20px) scale(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* agun */
+
+@keyframes flame {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+}
+
+.animate-flame {
+    animation: flame 1.5s infinite ease-in-out alternate;
+    mix-blend-mode: screen;
+}
+
+
+
+
+
+
+
+
+
+/* text agun */
+/* 🔥 Fire text effect */
+.fire-text {
+    color: #ff9800;
+    /* বেসিক কমলা কালার */
+    text-shadow:
+        0 0 5px #ff5722,
+        0 0 10px #ff9800,
+        0 0 20px #ff5722,
+        0 0 40px #ff1744;
+    position: relative;
+    animation: flicker 1s infinite alternate;
+}
+
+/* আগুনের নড়াচড়া */
+@keyframes flicker {
+    0% {
+        text-shadow: 0 0 5px #ff5722, 0 0 10px #ff9800, 0 0 20px #ff5722, 0 0 40px #ff1744;
+    }
+
+    25% {
+        text-shadow: 0 0 10px #ff9800, 0 0 20px #ff5722, 0 0 30px #ff1744, 0 0 60px #ff9100;
+    }
+
+    50% {
+        text-shadow: 0 0 8px #ff5722, 0 0 16px #ff9800, 0 0 24px #ff1744, 0 0 50px #ff6f00;
+    }
+
+    75% {
+        text-shadow: 0 0 12px #ff9800, 0 0 24px #ff5722, 0 0 36px #ff1744, 0 0 70px #ff9100;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #ff5722, 0 0 15px #ff9800, 0 0 25px #ff1744, 0 0 80px #ff6f00;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* gemeni text agun  */
+
+.our-blogs-fire-text {
+    /* প্রাথমিক রঙ: উজ্জ্বল লাল */
+    color: #ff4500;
+    /* OrangeRed */
+
+    /* টেক্সট শ্যাডো তৈরি (এখানেই মূল জাদু) */
+    text-shadow:
+        /* প্রথম স্তর: শিখার কেন্দ্র (হলুদ) */
+        0 0 4px #ffff00,
+        /* হালকা হলুদ কেন্দ্র */
+
+        /* দ্বিতীয় স্তর: শিখার মাঝের অংশ (কমলা) */
+        0 0 10px #ff6a00,
+        /* উজ্জ্বল কমলা আভা */
+
+        /* তৃতীয় স্তর: শিখার বাইরের প্রান্ত (লাল) */
+        0 0 20px #ff0000,
+        /* লাল আভা */
+
+        /* চতুর্থ স্তর: সামান্য ছড়ানো লাল আভা */
+        0 0 30px rgba(255, 0, 0, 0.5);
+
+    /* টেক্সটটি একটু উপরে ভাসছে এমন মনে করানোর জন্য */
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+/* (ঐচ্ছিক) মাউস হোভার করলে আরও উজ্জ্বল করার জন্য */
+.our-blogs-fire-text:hover {
+    text-shadow:
+        0 0 6px #ffff00,
+        0 0 15px #ff6a00,
+        0 0 30px #ff0000,
+        0 0 40px rgba(255, 0, 0, 0.7);
+}
