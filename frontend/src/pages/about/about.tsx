@@ -2,7 +2,7 @@ function About() {
     return (
 
         <div>
-            i am from About
+            About
         </div>
     );
 }

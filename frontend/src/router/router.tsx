@@ -1,5 +1,6 @@
 import MainLayout from "@/components/layout/mainLayout";
 import About from "@/pages/about/about";
+import Evolewtion from "@/pages/auth/evoleushon";
 
 import Contact from "@/pages/contact/contact";
 import Home from "@/pages/home";
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
                 path: "/contact",
                 Component: Contact
             },
+            {
+                path: "evolewtion",
+                Component: Evolewtion
+            }
         ]
     },
 

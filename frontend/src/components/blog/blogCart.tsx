@@ -12,7 +12,8 @@ const testimonials = [
     image: "img1.jpg",
     text: "ডিরেক্টেড ইভোলিউশন: যে প্রক্রিয়া জিতেছে ২০১৮ সালের নোবেল পুরস্কার",
     avatar: <MdOutlineArticle />,
-    link: "https://archive.roar.media/bangla/main/science/directed-evolution-the-process-which-won-the-2018-nobel-prize-in-chemistry"
+    link: "https://archive.roar.media/bangla/main/science/directed-evolution-the-process-which-won-the-2018-nobel-prize-in-chemistry",
+    linkForImg: "/evolewtion"
   },
   {
     id: 2,
@@ -33,7 +34,7 @@ const testimonials = [
   {
     id: 4,
     date: "অক্টোবর 12,2018",
-    image: "img4.png",
+    image: "img4.jpg",
     text: "পৃথিবীর বরফ গলা ঠেকাতে কাচ প্রযুক্তির নতুন কৌশল: সম্ভাবনা ও সমস্যা",
     avatar: <MdOutlineArticle />,
     link: "https://archive.roar.media/bangla/main/science/geo-engineering-to-stop-ice-melting"
@@ -86,8 +87,9 @@ const BlogCart = () => (
             className="mb-8 rounded-xl p-6 mx-[3px] break-inside-avoid shadow-[0px_0px_16px_0px_rgba(0,0,0,0.1)]"
           >
             <div className="flex flex-col">
-              <img src={`../public/${testimonial.image}`} alt="" />
-
+              <Link to={`${testimonial.linkForImg}`}>
+                <img src={`../public/${testimonial.image}`} alt="" />
+              </Link>
             </div>
             <p className="mt-5 text-[17px]">{testimonial.text}</p>
             <div className="flex gap-2.5 items-center ">
