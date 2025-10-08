@@ -25,34 +25,32 @@ const Navbar02Page = () => {
             <Button variant="outline" className="hidden  rounded-3xl sm:inline-flex">
               Sign In
             </Button>
-            <Button className=" rounded-full " size="icon">
-              <AlertDialog>
-                <AlertDialogTrigger className="flex items-center justify-center cursor-pointer"><Search className="cursor-pointer" /></AlertDialogTrigger>
+            <AlertDialog>
+              <AlertDialogTrigger className="flex items-center justify-center cursor-pointer"><Search className="cursor-pointer" /></AlertDialogTrigger>
 
-                <AlertDialogContent className="w-[400px] px-3">
-                  <AlertDialogHeader>
-                    <AlertDialogTitle>Search in blog</AlertDialogTitle>
-                    <AlertDialogDescription>
+              <AlertDialogContent className="w-[400px] px-3">
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Search in blog</AlertDialogTitle>
+                  <AlertDialogDescription>
 
-                      <Input placeholder="Search here...."></Input>
+                    <Input placeholder="Search here...."></Input>
 
-                    </AlertDialogDescription>
-                  </AlertDialogHeader>
-                  <AlertDialogFooter>
-                    <div className="flex flex-row mr-auto gap-3">
-                      <AlertDialogCancel className="cursor-pointer">Cancel</AlertDialogCancel>
-                      <AlertDialogAction className="cursor-pointer">Search</AlertDialogAction>
-                    </div>
-                  </AlertDialogFooter>
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <div className="flex flex-row mr-auto gap-3">
+                    <AlertDialogCancel className="cursor-pointer">Cancel</AlertDialogCancel>
+                    <AlertDialogAction className="cursor-pointer">Search</AlertDialogAction>
+                  </div>
+                </AlertDialogFooter>
 
-                </AlertDialogContent>
+              </AlertDialogContent>
 
-              </AlertDialog>
-              {/* <Search /> */}
-            </Button>
-            <Button size="icon" variant="outline" className="rounded-full">
-              <ModeToggle />
-            </Button>
+            </AlertDialog>
+            {/* <Search /> */}
+            {/* <Button size="icon" variant="outline" className="rounded-full">
+            </Button> */}
+            <ModeToggle />
 
             {/* Mobile Menu */}
             <div className="md:hidden">
