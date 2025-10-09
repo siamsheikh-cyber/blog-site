@@ -13,7 +13,7 @@ const testimonials = [
     text: "ডিরেক্টেড ইভোলিউশন: যে প্রক্রিয়া জিতেছে ২০১৮ সালের নোবেল পুরস্কার",
     avatar: <MdOutlineArticle />,
     link: "https://archive.roar.media/bangla/main/science/directed-evolution-the-process-which-won-the-2018-nobel-prize-in-chemistry",
-    linkForImg: "/evolewtion"
+    linkForImg: "/page/evoleushon"
   },
   {
     id: 2,

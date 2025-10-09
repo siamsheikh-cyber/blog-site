@@ -1,40 +1,41 @@
 import MainLayout from "@/components/layout/mainLayout";
 import About from "@/pages/about/about";
-import Evolewtion from "@/pages/auth/evoleushon";
-
+import Evoleushon from "@/pages/auth/evoleushon";
+import Page from "@/pages/auth/page";
 import Contact from "@/pages/contact/contact";
 import Home from "@/pages/home";
 
-
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        Component: MainLayout,
+        element: <MainLayout />,
         children: [
             {
-                path: "/",
-                Component: Home
-            },
-
-            {
-                path: "/about",
-                Component: About
+                path: "",
+                element: <Home />,
             },
             {
-                path: "/contact",
-                Component: Contact
+                path: "about",
+                element: <About />,
             },
             {
-                path: "evolewtion",
-                Component: Evolewtion
-            }
-        ]
+                path: "contact",
+                element: <Contact />,
+            },
+            {
+                path: "/page",
+                element: <Page />,
+                children: [
+                    {
+                        path: "evoleushon",
+                        element: <Evoleushon />,
+                    },
+                ],
+            },
+        ],
     },
+]);
 
-
-])
-
-
-export { router }
+export { router };

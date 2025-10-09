@@ -1,23 +1,6 @@
-import { FaWhatsapp } from "react-icons/fa";
-import { BsFacebook } from "react-icons/bs";
-import { SlSocialTwitter } from "react-icons/sl";
-import { FaInstagram } from "react-icons/fa";
-
-function Evolewtion() {
+function Evoleushon() {
     return (
-
-        <div className="relative dark:text-white p-10 mx-20 my-5 overflow-hidden shadow-[0_0_40px_rgba(255,100,0,0.4)]
-">
-            <img
-                src="../public/fire1.jpg"
-                alt="fire background"
-                className="absolute inset-0 w-full h-full object-cover opacity-40 -z-10 hidden dark:block"
-            />
-            {/* তোমার আগের content */}
-
-
-
-
+        <>
             <h1 className="text-4xl leading-[46px]">ডিরেক্টেড ইভোলিউশন: যে প্রক্রিয়া জিতেছে ২০১৮ সালের নোবেল পুরস্কার|</h1>
             <img src="../public/img1.jpg" alt="photo" className="w-full my-5 rounded-2xl" />
 
@@ -102,28 +85,8 @@ function Evolewtion() {
             <p className="text-[16px] leading-[26px] w-[80%] mx-auto">এককথায়, ডিরেক্টেড ইভোলিউশন এমন একটি প্রক্রিয়া, যা দ্বারা প্রকৃতির ক্ষমতা কাজে লাগিয়ে প্রকৃতিরই উন্নয়ন সাধন করা হয়। সিনথেটিক এনজাইম উৎপাদনের সর্বোত্তম হাতিয়ার এই ডিরেক্টেড ইভোলিউশন। উদ্ভাবনের পর থেকে এর সকল সাফল্যই বলে দেয় যে এই প্রক্রিয়া ভবিষ্যতে আরো অনেক উন্নত হবে এবং এনজাইম উৎপাদনে আর কার্যকর হবে। আর এতসব সুবিধা তৈরি করে দিয়েছে যে প্রক্রিয়া, সে প্রক্রিয়ার নোবেল পুরস্কার জেতা তো একরম অবধারিতই ছিল।
 
                 ফিচার ছবি: quantamagazine.org</p>
-
-
-
-
-
-            <div className="flex gap-4 mt-16 mb-14 w-[200px] mx-auto ">
-                <FaWhatsapp className="text-4xl cursor-pointer" />
-                <BsFacebook className="text-4xl cursor-pointer" />
-                <SlSocialTwitter className="text-4xl cursor-pointer" />
-                <FaInstagram className="text-4xl cursor-pointer" />
-            </div>
-
-            <p className="text-center">Developer Siam Sheikh</p>
-
-
-
-
-
-        </div >
-
-
+        </>
     );
 }
 
-export default Evolewtion;
+export default Evoleushon;
