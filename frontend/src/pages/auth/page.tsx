@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 function page() {
     return (
 
-        <div className="relative dark:text-white p-10 mx-20 my-5 overflow-hidden shadow-[0_0_40px_rgba(255,100,0,0.4)]
+        <div className="relative dark:text-white p-10 mx-20 my-5 overflow-hidden shadow-[0_0_40px_rgba(256,100,0,0.4)]
 ">
             <img
                 src="../public/fire1.jpg"
